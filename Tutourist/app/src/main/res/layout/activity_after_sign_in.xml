@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:background="@drawable/lkj"
+    tools:context=".afterSignIn">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTutorNAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:text="Name: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvTutorINSTITUTION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+
+            android:text="Instituition: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvTutorPROFESSION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="6dp"
+            android:text="Profession: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvTutorSUBJECT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="6dp"
+            android:text="Subject: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvTutorAGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="6dp"
+            android:text="Profile: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvTutorPHONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+
+            android:text="Contact num: "
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="12"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etTutorNAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvTutorNAME"
+            android:hint="Enter your name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etTutorINSTITUTION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvTutorINSTITUTION"
+            android:hint="Enter your instituition"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etTutorPROFESSION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvTutorPROFESSION"
+            android:hint="Enter your profession"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/etTutorSUbject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvTutorSUBJECT"
+            android:hint="Enter your subject"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Spinner
+            android:id="@+id/etStudentAG"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="4dp"
+            android:entries="@array/TutoOrStu"
+            android:outlineAmbientShadowColor="#DDC444"
+            android:scrollbarStyle="insideOverlay"
+            />
+
+
+        <EditText
+            android:id="@+id/etTutorPHONE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvTutorPHONE"
+            android:hint="Enter your number"
+            android:imeOptions="actionDone"
+            android:inputType="text|number"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnTutorREGISTER"
+
+            >
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If already registered,click here!"
+            android:textStyle="italic"
+            android:textSize="22dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tvCLICK"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

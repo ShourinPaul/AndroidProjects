@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+
+
+            <TextView
+                android:id="@+id/text_view_StudentNAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atif Aslam"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/text_view_StudentINSTITUTION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genre: Rock"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/text_view_StudentAGE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age: 27"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/text_view_StudentMEDIUM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country: India"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            <TextView
+                android:id="@+id/text_view_StudentCLASS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country: India"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            <TextView
+                android:id="@+id/text_view_StudentPHONE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country: India"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

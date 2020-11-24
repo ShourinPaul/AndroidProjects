@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:orientation="horizontal"
+    android:background="@drawable/st"
+    tools:context=".afterSTUDENTlogin">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStudentNAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:text="Name: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvStudentINSTITUTION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+
+            android:text="Instituition: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvStudentClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="6dp"
+            android:text="Class: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvStudentMEDIUM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="6dp"
+            android:text="Medium: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvStudentAGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginBottom="6dp"
+            android:text="Profile as: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvStudentPHONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+
+            android:text="Contact num: "
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="12"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etStudentNAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvStudentNAME"
+            android:hint="Enter your name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etStudentINSTITUTION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvStudentINSTITUTION"
+            android:hint="Enter your instituition"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etStudentCLASS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvStudentClass"
+            android:hint="Enter your clsss"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/etStudentMEDIUM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvStudentMEDIUM"
+            android:hint="Enter your subject"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <Spinner
+            android:id="@+id/etStudentAGE"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="4dp"
+            android:entries="@array/TutoOrStu"
+            android:outlineAmbientShadowColor="#DDC444"
+            android:scrollbarStyle="insideOverlay"
+            />
+
+        <EditText
+            android:id="@+id/etStudentPHONE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_toRightOf="@+id/tvStudentPHONE"
+            android:hint="Enter your number"
+            android:imeOptions="actionDone"
+            android:inputType="text|number"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnStudentREGISTER"
+
+            >
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If already registered,click here!"
+            android:textStyle="italic"
+            android:textSize="22dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tvCLICKHERE"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

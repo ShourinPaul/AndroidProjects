@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:gravity="center"
+    android:background="@drawable/ststst"
+    android:paddingTop="16dp"
+
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnTUTORID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+
+        android:layout_marginTop="230dp"
+
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="5dp"
+
+        android:text="TUTOR"
+        />
+    <Button
+        android:id="@+id/btnSTUDENTID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="45dp"
+
+        android:text="STUDENT"
+        />
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="about us"
+        android:id="@+id/aboutt"
+        android:textStyle="italic"
+        >
+
+    </Button>
+
+
+</LinearLayout>

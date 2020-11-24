@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TUTOURIST</string>
+
+    <array name="users">
+        <item>No users</item>
+        <item>Tutor</item>
+        <item>Student</item>
+
+    </array>
+
+    <array name="TutoOrStu">
+        <item>No item is selected</item>
+        <item>Tutor</item>
+        <item>Student</item>
+
+    </array>
+</resources>
